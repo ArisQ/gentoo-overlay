@@ -32,5 +32,5 @@ src_install() {
 	cmake_src_install
 
 	insinto /etc/interception/udevmon.d/
-	doins caps2esc.yml
+	newins "${FILESDIR}"/caps2esc.yml caps2esc.yml
 }
