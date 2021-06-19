@@ -1,0 +1,12 @@
+<repositories version="1.1" encoding="unicode">
+  <repo quality="experimental" priority="50">
+    <name>arisq-overlay</name>
+    <description>ArisQ's personal overlay.</description>
+    <homepage>https://overlay.lipbcu.love</homepage>
+    <owner>
+      <email>qiaoli.pg@gmail.com</email>
+      <name>ArisQ</name>
+    </owner>
+    <source type="git">https://gitlab.com/ArisQ/gentoo-overlay.git</source>
+  </repo>
+</repositories>
