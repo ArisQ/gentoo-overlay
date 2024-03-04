@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit git-r3 cmake
+inherit git-r3 cmake systemd
 
 DESCRIPTION="A minimal composable infrastructure on top of libudev and libevdev"
 HOMEPAGE="https://gitlab.com/interception/linux/tools"
@@ -21,7 +21,7 @@ dev-cpp/yaml-cpp"
 
 # cmake && Boost.Interprocess
 DEPEND="${RDEPEND}
-dev-util/cmake
+dev-build/cmake
 dev-libs/boost"
 
 BDEPEND=""
@@ -40,4 +40,6 @@ src_install() {
 	cmake_src_install
 
 	newinitd "${FILESDIR}"/interception-tools.init interception-tools
+
+	systemd_dounit "${FILESDIR}"/interception-tools.service
 }
