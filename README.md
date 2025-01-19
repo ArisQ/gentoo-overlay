@@ -33,3 +33,8 @@ layman-overlay-make to produce repositories.xml/arisq.xml
 ebuild obsidian-md-1.4.13.ebuild manifest
 ```
 
+
+## Usage
+
+[[https://wiki.gentoo.org/wiki/Eselect/Repository]]
+
